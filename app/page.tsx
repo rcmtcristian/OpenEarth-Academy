@@ -1,4 +1,3 @@
-// app/page.tsx
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -9,9 +8,9 @@ export default function Home() {
       <header className="bg-green-600 text-white p-6">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-3xl font-bold">OpenEarth Academy</h1>
-          <nav>
-            <Link href="#donate"><a className="mr-4 hover:underline">Donate Now</a></Link>
-            <Link href="#signup"><a className="bg-white text-green-600 py-2 px-4 rounded">Sign Up</a></Link>
+          <nav className="flex space-x-4">
+            <Link href="#donate" className="hover:underline">Donate Now</Link>
+            <Link href="#signup" className="bg-white text-green-600 py-2 px-4 rounded">Sign Up</Link>
           </nav>
         </div>
       </header>
@@ -22,8 +21,8 @@ export default function Home() {
           <h2 className="text-4xl font-bold mb-4">Join the OpenEarth Academy. Code for the Environment</h2>
           <p className="text-lg mb-8">Empower communities to fight climate change through code, data, and actionable projects.</p>
           <div className="flex justify-center space-x-4">
-            <Link href="#donate"><a className="bg-green-600 text-white py-3 px-6 rounded">Donate Now</a></Link>
-            <Link href="#signup"><a className="border border-green-600 text-green-600 py-3 px-6 rounded">Sign Up</a></Link>
+            <Link href="#donate" className="bg-green-600 text-white py-3 px-6 rounded">Donate Now</Link>
+            <Link href="#signup" className="border border-green-600 text-green-600 py-3 px-6 rounded">Sign Up</Link>
           </div>
         </div>
       </section>
@@ -122,14 +121,19 @@ export default function Home() {
           </div>
           <div>
             <h5 className="font-semibold mb-2">Links</h5>
-            <Link href="/privacy"><a className="hover:underline">Privacy Policy</a></Link><br />
-            <Link href="/terms"><a className="hover:underline">Terms of Use</a></Link>
+            <Link href="/privacy">Privacy Policy</Link>  
+            <br />
+            <Link href="/terms">Terms of Use</Link>
           </div>
           <div>
             <h5 className="font-semibold mb-2">Follow Us</h5>
             <div className="flex space-x-4">
-              <Link href="https://facebook.com/openearth"><a aria-label="Facebook"><Image src="/icons/facebook.svg" alt="Facebook" width={24} height={24} /></a></Link>
-              <Link href="https://instagram.com/openearth"><a aria-label="Instagram"><Image src="/icons/instagram.svg" alt="Instagram" width={24} height={24} /></a></Link>
+              <Link href="https://facebook.com/openearth" aria-label="Facebook">
+                <Image src="/icons/facebook.svg" alt="Facebook" width={24} height={24} />
+              </Link>
+              <Link href="https://instagram.com/openearth" aria-label="Instagram">
+                <Image src="/icons/instagram.svg" alt="Instagram" width={24} height={24} />
+              </Link>
             </div>
           </div>
         </div>
