@@ -11,26 +11,30 @@ export default function Home() {
   return (
     <div className="min-h-screen flex flex-col">
       {/* Header */}
-      <header className="bg-green-600 text-white p-6">
+      <header className="bg-gray-400 text-white p-6">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-3xl font-bold">OpenEarth Academy</h1>
-          <nav className="flex space-x-4">
+          {/* <nav className="flex space-x-4">
             <Link href="#donate" className="hover:underline">
               Get Updates
             </Link>
-            {/* <Link
+            <Link
               href="#signup"
               className="bg-white text-green-600 py-2 px-4 rounded"
             >
               Sign Up
-              
-            </Link> */}
-          </nav>
+            </Link>
+          </nav> */}
         </div>
       </header>
       {/* Hero Section */}
-      <section className="bg-gray-100 flex-grow">
-        <div className="container mx-auto py-20 text-center">
+      <section
+        className="bg-gray-100 relative flex-grow bg-cover bg-center"
+        style={{
+          backgroundImage: "url(/images/banner-one.png)",
+        }}
+      >
+        <div className="container mx-auto py-36 text-center">
           <h2 className="text-4xl font-bold mb-4">
             Join the OpenEarth Academy. Code for the Environment
           </h2>
@@ -43,14 +47,14 @@ export default function Home() {
               href="#donate"
               className="bg-green-600 text-white py-3 px-6 rounded"
             >
-              Donate Now
+              Get Updates
             </Link>
-            <Link
+            {/* <Link
               href="#signup"
               className="border border-green-600 text-green-600 py-3 px-6 rounded"
             >
               Sign Up
-            </Link>
+            </Link> */}
           </div>
         </div>
       </section>
