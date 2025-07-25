@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { CardIcon } from "./CardIcon";
 import { DeepDiveCard } from "./DeepDiveCard";
+import OpenEarthAcademyPromo from "./OpenEarthAcademyPromo";
 //@ts-ignore
 
 import { deepDiveCards } from "./cardData";
@@ -180,16 +181,8 @@ export default function Home() {
       </section>
 
       {/* Membership Fee */}
-      <section className="container mx-auto py-16">
-        <h3 className="text-3xl font-semibold text-center mb-8">
-          What does $50 a month cover?
-        </h3>
-        <ul className="space-y-4 list-disc list-inside max-w-xl mx-auto">
-          <li>Remote volunteering opportunities with global teams</li>
-          <li>Hands-on local events to plant and protect ecosystems</li>
-          <li>Funding free software & hardware for environmental groups</li>
-        </ul>
-      </section>
+      <OpenEarthAcademyPromo />
+
       {/* Case Studies */}
       <section className="bg-gray-100 py-16">
         <div className="container mx-auto">
